@@ -1,7 +1,8 @@
-deb http://archive.debian.org/debian/ jessie main non-free contrib
-deb http://archive.debian.org/debian/ jessie-updates main non-free contrib
-deb http://archive.debian.org/debian/ jessie-backports main non-free contrib
-deb-src http://archive.debian.org/debian/ jessie main non-free contrib
-deb-src http://archive.debian.org/debian/ jessie-updates main non-free contrib
-deb-src http://archive.debian.org/debian/ jessie-backports main non-free contrib
-deb http://archive.debian.org/debian-security/ jessie/updates main non-free contrib
+deb http://mirrors.tencentyun.com/debian/ jessie main non-free contrib
+deb http://mirrors.tencentyun.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.tencentyun.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.tencentyun.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian-security/ jessie/updates main non-free contrib
