@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY package.json /app
 
-ARG USE_CHINA_NPM_REGISTRY=0;
+ARG USE_CHINA_NPM_REGISTRY=1;
 
 RUN if [ "$USE_CHINA_NPM_REGISTRY" = 1 ]; then \
   echo 'use npm mirror'; npm config set registry https://registry.npm.taobao.org; \
