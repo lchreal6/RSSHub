@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY sources.list /app
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && mv /app/sources.list /etc/apt/ && apt-get update && apt-get -o Acquire::Check-Valid-Until=false install -yq libgconf-2-4 apt-transport-https git --no-install-recommends && apt-get clean \
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && mv /app/sources.list /etc/apt/ && apt-get  -o Acquire::Check-Valid-Until=false update && apt-get install -yq libgconf-2-4 apt-transport-https git --no-install-recommends && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV production
