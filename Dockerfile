@@ -1,6 +1,8 @@
 FROM node:10.15-slim
 LABEL MAINTAINER https://github.com/DIYgod/RSSHub/
 
+WORKDIR /app
+
 COPY sources.list /app
 
 RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && mv /app/sources.list /etc/apt/ && apt-get update && apt-get install -yq libgconf-2-4 apt-transport-https git --no-install-recommends && apt-get clean \
@@ -9,7 +11,6 @@ RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && mv /app/sources.list /
 ENV NODE_ENV production
 ENV TZ Asia/Shanghai
 
-WORKDIR /app
 
 COPY package.json /app
 
