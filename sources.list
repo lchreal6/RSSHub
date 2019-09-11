@@ -1,7 +1,8 @@
-deb http://mirrors.163.com/debian/ jessie main non-free contrib
-deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
-deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main
-deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
-deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
-deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
-deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+deb http://archive.debian.org/debian/ jessie main non-free contrib
+deb http://archive.debian.org/debian/ jessie-updates main non-free contrib
+deb http://archive.debian.org/debian/ jessie-backports main non-free contrib
+deb-src http://archive.debian.org/debian/ jessie main non-free contrib
+deb-src http://archive.debian.org/debian/ jessie-updates main non-free contrib
+deb-src http://archive.debian.org/debian/ jessie-backports main non-free contrib
+deb http://archive.debian.org/debian-security/ jessie/updates main non-free contrib
+d
