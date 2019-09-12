@@ -7,7 +7,7 @@ COPY sources.list /app
 COPY libvips-8.8.1-linux-x64.tar.gz /app
 
 RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && mv /app/sources.list /etc/apt/sources.list && apt-get update && apt-get install -yq libgconf-2-4 apt-transport-https git --no-install-recommends && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* && mv /app/libvips-8.8.1-linux-x64.tar.gz /root/.npm/_libvips/libvips-8.8.1-linux-x64.tar.gz
+  && rm -rf /var/lib/apt/lists/* && cp /app/libvips-8.8.1-linux-x64.tar.gz /root/.npm/_libvips/libvips-8.8.1-linux-x64.tar.gz
 
 ENV NODE_ENV production
 ENV TZ Asia/Shanghai
